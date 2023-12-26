@@ -54,10 +54,10 @@ export default {
         sortable: true,
       },
       {
-        name: "resBody",
-        label: "res.Body",
+        name: "endpoint",
+        label: "endPoint",
         align: "left",
-        field: "resBody",
+        field: "endpoint",
         sortable: true,
       },
       {

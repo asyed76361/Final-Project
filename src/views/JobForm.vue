@@ -184,13 +184,13 @@ const submitForm = async () => {
       const errorMessage =
         response.data.message || "Error submitting form. Please try again.";
       console.error("Form submission error:", errorMessage);
-      alert(`Error submitting form: ${errorMessage}`);
+      alert(`${errorMessage}`);
     }
   } catch (error) {
     console.error("API error:", error);
     const errorMessage =
       error.response?.data?.message || "Error submitting form. Please try again.";
-    alert(`Error submitting form: ${errorMessage}`);
+    alert(`${errorMessage}`);
   }
 };
 

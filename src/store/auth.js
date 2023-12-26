@@ -127,7 +127,9 @@ export const useAuthStore = defineStore({
         this.isAdmin = false;
         this.error = "Invalid email or password";
         console.error("Login error:", error);
-        alert(`Login error: ${error.message}`);
+        const errorMessage =
+          error.response?.data?.message || "Email or Password is Incorrect";
+        alert(`An error occurred during login: ${errorMessage}`);
         throw error;
       }
     },
@@ -153,7 +155,7 @@ export const useAuthStore = defineStore({
         );
     
         if (response.data.success) {
-          alert("Password changed successfully!");
+          alert("Password Change successfully!")
           router.push("/DashboardView");
         } else {
           const errorMessage =
@@ -368,7 +370,7 @@ export const useAuthStore = defineStore({
             userName: log.userName,
             email: log.email,
             reqBody: log.reqBody,
-            resBody: log.resBody,
+            endpoint: log.endpoint,
             reqStatusCode: log.statusCode,
             createdAt: log.createdAt,
           }));

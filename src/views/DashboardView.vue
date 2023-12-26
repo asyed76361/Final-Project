@@ -4,10 +4,10 @@
       class="nav-bar"
       style="
         background-color: #537895;
-        height: 50px;
+        height: 70px;
         display: flex;
         align-items: center;
-        padding: 0 20px;
+        padding: 10px 20px 10px;
       "
     >
       <div style="margin-right: auto">
@@ -27,7 +27,7 @@
             padding: 5px 10px;
             border-radius: 5px;
             cursor: pointer;
-            margin-right: 10px; <!-- Adjust margin as needed -->
+            margin-right: 10px;
           "
         >
           Change Password

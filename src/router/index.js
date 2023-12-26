@@ -10,7 +10,6 @@ import CreateUser from "../components/CreateUser";
 import UserList from "../components/UserList";
 import ChangePassword from "../components/ChangePassword"
 import CreatePassword from "../components/CreatePassword";
-import ChatComponent from "../components/ChatComponent"
 import { useAuthStore } from "../store/auth";
 
 const routes = [
@@ -67,13 +66,7 @@ const routes = [
         name: "ApplicantsList",
         component: ApplicantsList,
         meta: { requiresAuth: true },
-      },
-      {
-        path: "/ChatComponent",
-        name: "ChatComponent",
-        component: ChatComponent,
-        meta: { requiresAuth: true },
-      },
+      }
     ],
   },
   {
